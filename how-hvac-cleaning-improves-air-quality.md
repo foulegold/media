@@ -16,6 +16,8 @@ When not properly cared for, air ducts and vents become places where different c
 
 These now can be circulated throughout the living space, increasing allergies, asthma, and other respiratory conditions with each on cycle of the HVAC system. Additionally, this dust/debris buildup acts to restrict airflow, which will make the system work harder and use more energy, resulting in higher utility bills and added wear on the system.
 
+![HVACNY](https://github.com/user-attachments/assets/24429657-e253-4243-a80b-41a061cbe0a0)
+
 ## **Advantages of HVAC Cleaning**
 
 ### **Improved Respiratory Health**
