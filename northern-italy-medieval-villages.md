@@ -2,7 +2,7 @@
 
 ## **Bergamo: A Medieval Gem Sitting Atop a Mountain**
 
-Bergamo is a town in the region of Lombardy. It easily combines past and present; Citta Alta means upper old walled city, and Citta Bassa means modernity. This coherence of ages in Bergamo is what attracts not only scholars but also everyone who gets there. Come build your route on Northern Italy with https://north-italy.co.il/.
+Bergamo is a town in the region of Lombardy. It easily combines past and present; Citta Alta means upper old walled city, and Citta Bassa means modernity. This coherence of ages in Bergamo is what attracts not only scholars but also everyone who gets there. Come build your route on Northern Italy with [https://north-italy.co.il/](https://north-italy.co.il/).
 
 ### **The Enchanting Città Alta**
 
