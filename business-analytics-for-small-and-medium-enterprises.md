@@ -1,3 +1,5 @@
+# **Business Analytics for Small and Medium Enterprises**
+
 In this fast-moving and data-driven world, businesses of every scale have an urgent need to tap into better decision-making as supported by data. The adoption of business analytics by SMEs assures them of a set of potential benefits that shall be a strong contributor to commerce development and competitiveness. However, the implementation of business analytics within SMEs is not easy, with several challenges along the way. This article will explore the opportunities and barriers likely to be faced by SMEs as they increasingly go live with [Power BI](https://bidynamics.kz/) implementations, and look at how the tools help drive growth.
 
 ![Bi Dynamics](https://github.com/user-attachments/assets/612b26ec-e702-406e-b05e-fe14f251b456)
