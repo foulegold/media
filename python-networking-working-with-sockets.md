@@ -2,7 +2,7 @@
 
 Python socket programming lays a very strong foundation in the development of network-based applications by allowing a device to communicate effectively over the internet. This tutorial will explain basic concepts of socket programming in Python and walk you through the key aspects of Python socket programming and its practical usage for developing network-driven applications, whether it be a simple data transfer or a scalable web solution.
 
-If you're looking at frameworks to implement with your socket projects, then a Django Tutorial will be quite helpful for developing larger applications in Python because it provides tools that are quite helpful for web development. Now, let's dive into socket programming in Python and see how it does, in fact, provide the capability for networking, helping developers with the development of various applications that are network-based and with efficiency. Visit https://nicepython.com/ to learn more Python tutorials.
+If you're looking at frameworks to implement with your socket projects, then a Django Tutorial will be quite helpful for developing larger applications in Python because it provides tools that are quite helpful for web development. Now, let's dive into socket programming in Python and see how it does, in fact, provide the capability for networking, helping developers with the development of various applications that are network-based and with efficiency. Visit [https://nicepython.com/](https://nicepython.com/) to learn more Python tutorials.
 
 ## **Socket Programming in Python**
 
