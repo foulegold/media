@@ -1,6 +1,6 @@
 # **From Custom CMS to Laravel: Key Improvements and Lessons Learned**
 
-Migrating a website from a custom CMS to one of the robust frameworks—i.e., Laravel—implicates considerable improvement in performance, speed of development, and scalability. Italian furniture ProStudio https://www.italianskaia-mebel.ru/ is one of the strong cases that can be used to illustrate improvements to flexibility, scalability, and ease of development. The article takes a reader through their journey of migration, differences between a custom CMS and Laravel, and critical improvements achieved.
+Migrating a website from a custom CMS to one of the robust frameworks—i.e., Laravel—implicates considerable improvement in performance, speed of development, and scalability. Italian furniture ProStudio [https://www.italianskaia-mebel.ru/](https://www.italianskaia-mebel.ru/) is one of the strong cases that can be used to illustrate improvements to flexibility, scalability, and ease of development. The article takes a reader through their journey of migration, differences between a custom CMS and Laravel, and critical improvements achieved.
 
 ## **Why Migrate from a Custom CMS to Laravel?**
 
@@ -40,7 +40,7 @@ One of the major problems that Italian furniture ProStudio faced with their cust
 
 ## **Migration Process: Step-by-Step Transformation of Custom CMS to Laravel**
 
-The process of migration from a custom CMS to Laravel required careful planning to avoid disruptions. https://www.italianskaia-mebel.ru/ migrated in the following key stages:
+The process of migration from a custom CMS to Laravel required careful planning to avoid disruptions. [https://www.italianskaia-mebel.ru/](https://www.italianskaia-mebel.ru/) migrated in the following key stages:
 
 - **Assessment and Requirements Gathering**: Preliminary assessment of the current CMS, database structure, and performance issues were completed before migration.
 - **Database Migration and Structuring**: The custom CMS database was improved to work with Laravel, with tables and data structures migrated for compatibility.
