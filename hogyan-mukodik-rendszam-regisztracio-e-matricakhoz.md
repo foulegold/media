@@ -1,6 +1,6 @@
 # **Hogyan működik a rendszám regisztráció az e-matricákhoz?**
 
-A cseh autópályák használatához szükséges e-matricák beszerzése egyszerű és gyors folyamattá vált az online rendszerek elterjedésével. Az e-matrica rendszám regisztrációja, azaz a "[cseh autópálya matrica](https://electronic-vignette.cz/hu)" regisztrációjának helyes lebonyolítása azonban elengedhetetlen ahhoz, hogy az autósok gond nélkül közlekedhessenek az ország díjköteles útszakaszain. Ebben a cikkben részletesen bemutatjuk, hogyan működik a rendszám regisztráció az e-matricákhoz.
+A cseh autópályák használatához szükséges e-matricák beszerzése egyszerű és gyors folyamattá vált az online rendszerek elterjedésével. Az e-matrica rendszám regisztrációja, azaz a [cseh autópálya matrica](https://electronic-vignette.cz/hu) regisztrációjának helyes lebonyolítása azonban elengedhetetlen ahhoz, hogy az autósok gond nélkül közlekedhessenek az ország díjköteles útszakaszain. Ebben a cikkben részletesen bemutatjuk, hogyan működik a rendszám regisztráció az e-matricákhoz.
 
 ## **Miért fontos a rendszám regisztráció az e-matricákhoz?**
 
@@ -12,7 +12,7 @@ Az e-matrica regisztrációja egyszerű és néhány lépésben elvégezhető. A
 
 ### **1. Regisztrációs felület kiválasztása**
 
-A rendszám regisztráció online felületen keresztül történik. A hivatalos weboldal (pl. [edalnice.cz](https://edalnice.cz/)) és mobilalkalmazások is rendelkezésre állnak.
+A rendszám regisztráció online felületen keresztül történik. A hivatalos weboldal (pl. [https://electronic-vignette.cz/hu](https://electronic-vignette.cz/hu)) és mobilalkalmazások is rendelkezésre állnak.
 
 ### **2. Járműinformációk megadása**
 
