@@ -6,6 +6,8 @@ Put together, geo-positioning and augmented reality create a very strong junctio
 
 Geopositioning in itself is a technology for detecting the geographic position of a device in real time. Integrating AR into this means overlaying digital information onto elements of the physical surroundings interactively by the user. It finds application in industries that rely on location-based services, such as tourism, retail, and event management.
 
+![a4037cac-d5f7-4e25-8e89-0d46949d50bb](https://github.com/user-attachments/assets/f3e8aeae-4d9e-4ab5-b3b6-ea2dcae656be)
+
 ## **Applications of AR in Geolocation**
 
 ### **AR-Powered Navigation for Travel and Tourism**
