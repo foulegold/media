@@ -15,7 +15,6 @@ The majority of online markets and vendors employ automated web services to faci
 - **Login Credentials Are Sent** – The credentials either are displayed on the purchase page, emailed, or sent as part of an API response.
 
 ![Telegram accounts](https://github.com/user-attachments/assets/0a86bf15-0695-41de-8670-d71bc7e91691)
-![buy Telegram accounts](https://github.com/user-attachments/assets/12be1663-7a66-4079-bed6-eba33233c5f4)
 
 ### **Advantages of Automated Web Services**
 
