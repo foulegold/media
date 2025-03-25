@@ -14,6 +14,8 @@ The majority of online markets and vendors employ automated web services to faci
 - **Account is Retrieved or Created** – The system pulls the account from a secure database if the account already exists. If the account is new, an automation tool creates the account on demand.
 - **Login Credentials Are Sent** – The credentials either are displayed on the purchase page, emailed, or sent as part of an API response.
 
+![Telegram accounts](https://github.com/user-attachments/assets/0a86bf15-0695-41de-8670-d71bc7e91691)
+
 ### **Advantages of Automated Web Services**
 
 - **Instant Access** – No waiting; accounts are delivered in seconds.
