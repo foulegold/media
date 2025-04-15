@@ -20,6 +20,7 @@
 
 - **Перегруженные интерфейсы**
 - **Избыточное использование теней и градиентов**
+![office-responsive-devices-design-website-3d-rendering_72104-3783](https://github.com/user-attachments/assets/7d7098a1-0beb-4b2a-939e-97625dac5535)
 
 ### **Искусственный интеллект в дизайне**
 
