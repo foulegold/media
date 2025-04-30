@@ -3,3 +3,4 @@
 ![c75814211313217 6720cb79a945a](https://github.com/user-attachments/assets/2e70a0e4-dee2-4eee-a3f6-3a5bcce59c60)
 
 ![ChatGPT Image Apr 25, 2025, 04_31_52 PM](https://github.com/user-attachments/assets/494113e5-fbb7-46e3-91f3-62feee8cbb39)
+![What is Forex and How Does It Work](https://github.com/user-attachments/assets/c418b282-a6ee-4ea5-ae03-a32ab81c852e)
