@@ -4,3 +4,4 @@
 
 ![ChatGPT Image Apr 25, 2025, 04_31_52 PM](https://github.com/user-attachments/assets/494113e5-fbb7-46e3-91f3-62feee8cbb39)
 ![What is Forex and How Does It Work](https://github.com/user-attachments/assets/c418b282-a6ee-4ea5-ae03-a32ab81c852e)
+![Documents You Need for a Mortgage Application in the USA](https://github.com/user-attachments/assets/008e58ea-1434-4348-b45e-2b8ac5feceee)
