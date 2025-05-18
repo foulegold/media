@@ -7,3 +7,4 @@
 ![Documents You Need for a Mortgage Application in the USA](https://github.com/user-attachments/assets/008e58ea-1434-4348-b45e-2b8ac5feceee)
 
 ![freezer](https://github.com/user-attachments/assets/eb61ae6b-8343-4292-b8a8-afcc4a494de9)
+![oven](https://github.com/user-attachments/assets/72cd0559-3d89-4260-9105-d95c6b2ec872)
