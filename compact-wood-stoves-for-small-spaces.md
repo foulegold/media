@@ -1,6 +1,6 @@
 # **Top 5 Compact Wood Stoves for Small Spaces That Deliver Reliable Heat**
 
-The tiny place wood burner is a gadget, which offers warmth in the smallest of roomy. Through tent, they may be used in small homes, van mod and RVs. Wood stove  from https://woodstoves.shop/ is characterised by weight saving, small size and a simple operation which generate economical combustion.
+The tiny place wood burner is a gadget, which offers warmth in the smallest of roomy. Through tent, they may be used in small homes, van mod and RVs. Wood stove  from [https://woodstoves.shop/](https://woodstoves.shop/) is characterised by weight saving, small size and a simple operation which generate economical combustion.
 
 ## **Use Cases for Compact Wood Stoves**
 
