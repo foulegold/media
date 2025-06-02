@@ -9,3 +9,4 @@
 ![freezer](https://github.com/user-attachments/assets/eb61ae6b-8343-4292-b8a8-afcc4a494de9)
 ![oven](https://github.com/user-attachments/assets/72cd0559-3d89-4260-9105-d95c6b2ec872)
 ![elektrik](https://github.com/user-attachments/assets/a1492515-a504-4528-a323-88f37dbf31b3)
+![1win](https://github.com/user-attachments/assets/5aa990a2-7c97-45df-b1c7-9e50d75a1e15)
