@@ -1,4 +1,4 @@
-# **The Importance of RAID-10 SSD Storage in Hosting*
+# **The Importance of RAID-10 SSD Storage in Hosting**
 
 With digital presence growing, the preserving high hosting performance and data consistency have become a crucial fundaments for successful online businesses. With a range of technologies and excellent speed/redudancy combinations, the RAID-10 SSD is no doubt the best combination. This post goes into the details of why RAID-10 SSD is now so standard in web hosting systems — but particularly in environments such as [VPS Europe](https://www.en.ee/vps-servers/) where supreme performance, availability and data protection are king.
 
