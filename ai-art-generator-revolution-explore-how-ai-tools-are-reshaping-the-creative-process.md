@@ -1,6 +1,6 @@
 # **AI art generator revolution: explore how AI tools are reshaping the creative process**
 
-Welcome to our deep-dive into the AI art generator revolution: let’s delve into how AI tools are transforming the creative process. As the state of image generation models have improved, we’ve seen them start to deeply reshape the creative process and workflows of artists, designers, and other creative professionals. Now with services like https://neurobriefs.app/, anyone can harness the waves of this cybernetic revolution and combine their own human ingenuity with cutting-edge algorithms to create beautiful, original visual art. Here, we are covering the future digital art practices, such as transformer-based architectures and diffusion algorithms.
+Welcome to our deep-dive into the AI art generator revolution: let’s delve into how AI tools are transforming the creative process. As the state of image generation models have improved, we’ve seen them start to deeply reshape the creative process and workflows of artists, designers, and other creative professionals. Now with services like [https://neurobriefs.app/](https://neurobriefs.app/), anyone can harness the waves of this cybernetic revolution and combine their own human ingenuity with cutting-edge algorithms to create beautiful, original visual art. Here, we are covering the future digital art practices, such as transformer-based architectures and diffusion algorithms.
 
 ## **AI Art - From the Machine Learning Leagues to Grassroots Innovations**
 
