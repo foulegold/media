@@ -11,6 +11,7 @@ Crypto payments offer several advantages for both businesses and customers:
 - Fast settlements — some networks confirm in seconds
 
 With the rise of stablecoins (like USDT and USDC), crypto becomes even more practical for day-to-day transactions.
+![img](https://i.imghippo.com/files/FNf4066kdI.png)
 
 ## How Crypto Payment Processing Works
 
