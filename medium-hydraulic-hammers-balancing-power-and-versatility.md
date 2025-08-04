@@ -1,6 +1,6 @@
 # **Medium Hydraulic Hammers Balancing Power and Versatility**
 
-Like a conclusion drawn from this general power vs practicality story line and that is the machine part, a hydraulic hammer from [https://mgp-st.com/gidromoloty/](https://mgp-st.com/gidromoloty/) quite neatly falls between brute force and adaptive finesse. Specifically, medium hydraulic hammers are designed for 6.5- to 32-ton excavators and balance a combination of nerve-crushing force with operational versatility. These slightly less powerful tools have become very useful on job sites because they are capable of breaking through hard surfaces, while still being relatively small and easy to operate.
+Like a conclusion drawn from this general power vs practicality story line and that is the machine part, a hydraulic hammer from [http://mgp-st.com/kupit-gidravlicheskiy-molot-dlya-ekskavatora-nizkaya-cena/](http://mgp-st.com/kupit-gidravlicheskiy-molot-dlya-ekskavatora-nizkaya-cena/) quite neatly falls between brute force and adaptive finesse. Specifically, medium hydraulic hammers are designed for 6.5- to 32-ton excavators and balance a combination of nerve-crushing force with operational versatility. These slightly less powerful tools have become very useful on job sites because they are capable of breaking through hard surfaces, while still being relatively small and easy to operate.
 
 ## **What Are Medium Hydraulic Hammers?**
 
