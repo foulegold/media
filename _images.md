@@ -13,3 +13,4 @@
 ![photo_2025-06-05_13-12-55](https://github.com/user-attachments/assets/519e8036-ed5a-4f6d-b910-13642814697f)
 <img width="1485" height="916" alt="Crocus Investments Florida" src="https://github.com/user-attachments/assets/2823c6a6-63df-4201-9449-642b06b8e062" />
 <img width="1536" height="1024" alt="3" src="https://github.com/user-attachments/assets/4fba7c04-9222-4048-8d7f-9594fda1fd9f" />
+<img width="1024" height="1536" alt="2" src="https://github.com/user-attachments/assets/4120d74e-6763-405c-8d2a-071ec6c91a34" />
