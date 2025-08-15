@@ -15,3 +15,7 @@
 <img width="1536" height="1024" alt="3" src="https://github.com/user-attachments/assets/4fba7c04-9222-4048-8d7f-9594fda1fd9f" />
 <img width="1024" height="1536" alt="2" src="https://github.com/user-attachments/assets/4120d74e-6763-405c-8d2a-071ec6c91a34" />
 <img width="1536" height="1024" alt="1" src="https://github.com/user-attachments/assets/6e5427f1-74d4-4c55-b46f-491be3ddb641" />
+
+<img width="1536" height="1024" alt="autocad1" src="https://github.com/user-attachments/assets/3e6086fa-2882-498c-a25b-06b733e6d8a3" />
+<img width="1536" height="1024" alt="autocad3" src="https://github.com/user-attachments/assets/6dc136a0-efba-4591-9826-78db1a878528" />
+<img width="1536" height="1024" alt="autocad2" src="https://github.com/user-attachments/assets/c1f57c7b-44da-4c34-af3d-1407cb389f1d" />
