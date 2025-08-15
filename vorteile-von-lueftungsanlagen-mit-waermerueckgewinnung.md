@@ -1,6 +1,6 @@
 # **Vorteile von Lüftungsanlagen mit Wärmerückgewinnung für Energieeinsparung und Luftqualität**
 
-Lüftungsanlagen mit Wärmerückgewinnung senken den Energieverbrauch und sichern eine gleichbleibend gute Raumluftqualität. Systeme mit zusätzlicher Funktion wie Lüftungsanlagen mit Klimatisierung von https://okbaugmbh.de/services/lftungssysteme-mit-khlung-und-heizung ermöglichen Temperaturregelung und Luftaustausch in einem Gerät. Durch den Einsatz dieser Technik wird der Wärmeverlust minimiert, und der Betrieb erfolgt mit optimiertem Energieeinsatz.
+Lüftungsanlagen mit Wärmerückgewinnung senken den Energieverbrauch und sichern eine gleichbleibend gute Raumluftqualität. Systeme mit zusätzlicher Funktion wie Lüftungsanlagen mit Klimatisierung von [https://okbaugmbh.de/services/lftungssysteme-mit-khlung-und-heizung](https://okbaugmbh.de/services/lftungssysteme-mit-khlung-und-heizung) ermöglichen Temperaturregelung und Luftaustausch in einem Gerät. Durch den Einsatz dieser Technik wird der Wärmeverlust minimiert, und der Betrieb erfolgt mit optimiertem Energieeinsatz.
 
 ## **Funktionsprinzip der Wärmerückgewinnung**
 
