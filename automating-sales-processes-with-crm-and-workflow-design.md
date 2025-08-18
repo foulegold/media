@@ -19,6 +19,8 @@ Building sales workflows makes it possible for every team member to adhere to id
 - **Giving clients** mixed or conflicting messages
 
 When done well, workflows enable companies to systematically plot a customer journey at each stage that ensures the right people get the right message at the right time.
+<img width="1024" height="1536" alt="sales1" src="https://github.com/user-attachments/assets/23b9b2e7-29c0-41f5-9dba-6bf82bf638c5" />
+
 
 ## **Why should you automate the sales process?**
 
