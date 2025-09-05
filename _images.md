@@ -1,3 +1,4 @@
+![ии6](https://github.com/user-attachments/assets/49a94b88-97a9-4c31-98e4-9cbd24d581e8)
 ![us-proxy3](https://github.com/user-attachments/assets/784ceab6-71c0-4722-b65b-0f0c0a11910f)
 
 ![c75814211313217 6720cb79a945a](https://github.com/user-attachments/assets/2e70a0e4-dee2-4eee-a3f6-3a5bcce59c60)
@@ -19,4 +20,4 @@
 <img width="1536" height="1024" alt="autocad1" src="https://github.com/user-attachments/assets/3e6086fa-2882-498c-a25b-06b733e6d8a3" />
 <img width="1536" height="1024" alt="autocad3" src="https://github.com/user-attachments/assets/6dc136a0-efba-4591-9826-78db1a878528" />
 <img width="1536" height="1024" alt="autocad2" src="https://github.com/user-attachments/assets/c1f57c7b-44da-4c34-af3d-1407cb389f1d" />
-![ии6](https://github.com/user-attachments/assets/49a94b88-97a9-4c31-98e4-9cbd24d581e8)
+
