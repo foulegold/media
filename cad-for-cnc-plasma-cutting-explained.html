@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CAD for CNC Plasma Cutting Explained</title>
+  <meta name="description" content="A comprehensive guide to preparing precision CAD files optimized for CNC plasma cutting. Covers reproducible workflow strategies, geometry creation, tolerances, offsets, lead strategies, nesting, export parameters, and quality control for reliable results across mainstream CAD and CAM platforms.">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      background: linear-gradient(135deg, #f9f9f9 0%, #eeeeee 100%);
+      color: #262626;
+      line-height: 1.7;
+    }
+    h1, h2, h3 {
+      margin-top: 2em;
+      margin-bottom: 1em;
+      font-weight: 600;
+      background: linear-gradient(90deg, #dbe6fa 0%, #fcfcfc 100%);
+      border-radius: 0.25em;
+      padding: 0.3em 0.7em;
+      color: #24406b;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 2.1em;
+      margin-top: 1.7em;
+      margin-bottom: 1.2em;
+      border-left: 4px solid #9bbcee;
+      border-bottom: 2px solid #e2e2e2;
+      box-shadow: 0 2px 8px 0 rgba(80,100,150,0.04);
+    }
+    h2 {
+      font-size: 1.5em;
+      border-left: 3px solid #c4d8eb;
+      border-bottom: 1px solid #dedede;
+    }
+    h3 {
+      font-size: 1.1em;
+      border-left: 2px solid #e8eaf6;
+      border-bottom: none;
+      background: linear-gradient(90deg, #f4f5fa 0%, #fbfbfb 100%);
+      color: #2d364c;
+    }
+    section {
+      max-width: 900px;
+      margin: 0 auto 1.6em auto;
+      padding: 2em 2em 1em 2em;
+      background: linear-gradient(120deg, #fff 0%, #f4f7fc 100%);
+      border-radius: 0.8em;
+      box-shadow: 0 1px 12px rgba(48,67,90,0.055);
+    }
+    ul, ol {
+      margin-left: 1em;
+      margin-bottom: 1em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.8em 0;
+      background: linear-gradient(90deg, #fafcff 0%, #f7fafd 100%);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 7px rgba(100,120,170,0.04);
+    }
+    th, td {
+      padding: 0.7em 0.5em;
+      border-bottom: 1px solid #d6e2f1;
+      text-align: left;
+    }
+    th {
+      background: linear-gradient(90deg, #e8f0fa 0%, #f6fbff 100%);
+      color: #336099;
+      font-weight: 600;
+      border-bottom: 2px solid #ccdae7;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    a {
+      color: #3359a0;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #6d7a9b;
+    }
+    a:hover, a:focus {
+      color: #204078;
+      text-decoration: none;
+      border-bottom: 1px dotted #5171b7;
+    }
+    hr {
+      border: none;
+      border-top: 1.5px solid #e3ecf7;
+      margin: 2em 0;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>CAD for CNC Plasma Cutting Explained</h1>
+    <p>
+      The objective of this guide is to define a reproducible workflow for preparing precision CAD files optimized for CNC plasma fabrication. It addresses geometry creation, tolerances, offsets, lead strategies, nesting, export parameters, and quality control. The process described is software-agnostic and applies to most 2D CAD and CAM toolchains; workflows are compatible with mainstream CAD platforms, including <a href="https://ask4cad.com/shop" target="_blank">nanocad</a>. The target outcome is predictable cut quality, minimal rework, and controlled dimensional variation across materials and machine classes.
+    </p>
+  </section>
+  <section>
+    <h2>Purpose and Scope of Precision Plasma Files</h2>
+    <p>
+      CNC plasma is a thermal profiling process with finite kerf, heat-affected zone, and positional accuracy defined by machine mechanics, torch technology, and consumables. CAD files must anticipate these constraints. This article focuses on 2D profiles for plate and sheet cutting. It excludes machine-specific G-code details and covers general practices that transfer across controllers and CAM systems.
+    </p>
+    <ul>
+      <li>Consistent interpretation of units, layers, and entity types from CAD to CAM.</li>
+      <li>Geometry that is manufacturable at the specified thickness and process capability.</li>
+      <li>Explicit handling of kerf and lead strategies to preserve features.</li>
+      <li>Minimal file complexity for stable post-processing and path planning.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>File Standards and Formats</h2>
+    <p>
+      Use formats that preserve 2D vector fidelity without unnecessary metadata. DXF (R12/R14/2000) and DWG are typical for line and arc entities. SVG can be acceptable if the CAM supports it and units are unambiguous.
+    </p>
+    <ul>
+      <li>Prefer DXF with polylines and true arcs. Avoid splines where possible.</li>
+      <li>Set drawing units explicitly to millimeters or inches and keep scale 1 to 1.</li>
+      <li>Place all cut geometry on dedicated layers. Avoid hatches, dimensions, text, and images in the export.</li>
+      <li>Define a single sheet coordinate system with a stable origin aligned to the stock corner.</li>
+      <li>Keep file size small by removing redundant blocks, proxies, and viewport objects.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Geometry Modeling Rules</h2>
+    <p>
+      Geometry suitable for plasma cutting should be topologically clean and limited to supported primitives.
+    </p>
+    <h3>Layering Strategy</h3>
+    <ul>
+      <li>Cut exterior contours on one layer.</li>
+      <li>Cut interior features (holes, slots) on a separate layer.</li>
+      <li>Optional layers for etch or mark passes if the machine supports marking.</li>
+      <li>Optional layers for bend lines or reference only, excluded from cutting.</li>
+    </ul>
+    <h3>Line Types and Entities</h3>
+    <ul>
+      <li>Represent profiles with polylines and circular arcs. Straight segments should be single polylines, not fragmented lines.</li>
+      <li>Avoid splines and ellipses. If present, approximate them with arc or line segments at a chord error smaller than the process resolution. Keep the segmentation tolerance consistent across the drawing.</li>
+      <li>Remove all construction lines and duplicates. Eliminate zero-length entities and stacked contours.</li>
+    </ul>
+    <h3>Curves, Splines, and Arcs</h3>
+    <ul>
+      <li>Prefer true arcs for circular features; this reduces path points and improves machine fluidity.</li>
+      <li>For spline-derived shapes, use conversion with a defined maximum chord error below the expected kerf width to prevent faceting visibility.</li>
+      <li>Maintain tangent continuity at joins to avoid micro-pauses in motion planning that can mark the edge.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Dimensional Control and Tolerances</h2>
+    <p>
+      Plasma cut tolerance depends on torch class, table accuracy, consumables, gas, and thickness. Typical general-purpose tables achieve millimeter-level accuracy on thin sheet and looser results on thick plate.
+    </p>
+    <ul>
+      <li>Specify hole diameters, slot widths, and web features based on achievable minimums for the thickness. Extremely small inner features are at risk of overburn and loss of circularity.</li>
+      <li>Do not design holes at the nominal dimension when the CAM performs kerf compensation; allow for true hole quality enhancement strategies if available in the CAM or controller.</li>
+      <li>For clearance holes in thin sheet, increase nominal diameter relative to drill size assumptions, as plasma holes tend to taper and exhibit dross if undersized.</li>
+      <li>For fit-critical profiles, plan for secondary finishing or apply process allowances in CAD if CAM is not compensating automatically.</li>
+    </ul>
+    <p><img href="https://github.com/user-attachments/assets/b15b08d9-26c7-4348-b95d-82761ceed797"></p>
+  </section>
+  <section>
+    <h2>Material, Thickness, and Process Parameters</h2>
+    <p>
+      Material and thickness determine kerf width, cut speed, pierce capability, minimum radii, and heat input. The following values are indicative and must be validated against the specific torch and consumables.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Material thickness</th>
+          <th>Typical kerf width</th>
+          <th>Minimum inner radius</th>
+          <th>Minimum hole diameter</th>
+          <th>Minimum web width</th>
+          <th>Recommended lead-in length</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thin sheet (up to 2 mm)</td>
+          <td>1.0 to 1.5 mm</td>
+          <td>0.8 to 1.0 mm</td>
+          <td>1.5 to 2.0 times thickness</td>
+          <td>1.5 times thickness</td>
+          <td>3 to 5 mm</td>
+        </tr>
+        <tr>
+          <td>Light plate (3 to 6 mm)</td>
+          <td>1.2 to 1.8 mm</td>
+          <td>1.0 to 1.5 mm</td>
+          <td>1.8 to 2.5 times thickness</td>
+          <td>2.0 times thickness</td>
+          <td>5 to 8 mm</td>
+        </tr>
+        <tr>
+          <td>Medium plate (8 to 12 mm)</td>
+          <td>1.5 to 2.2 mm</td>
+          <td>1.5 to 2.0 mm</td>
+          <td>2.5 to 3.0 times thickness</td>
+          <td>2.5 times thickness</td>
+          <td>8 to 12 mm</td>
+        </tr>
+        <tr>
+          <td>Heavy plate (16 to 25 mm)</td>
+          <td>2.0 to 3.0 mm</td>
+          <td>2.0 to 3.0 mm</td>
+          <td>3.0 to 4.0 times thickness</td>
+          <td>3.0 times thickness</td>
+          <td>12 to 18 mm</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Use these as design-time constraints. CAM-specific hole quality features, slower feed on small holes, or specialized consumables can shift these limits.
+    </p>
+  </section>
+  <section>
+    <h2>Topology Cleaning and Validation</h2>
+    <p>
+      Before export, ensure geometry is watertight and machinable. Clean topology prevents CAM from misinterpreting cuts and inserting unintended moves.
+    </p>
+    <ul>
+      <li>Close all contours. Convert open chains into closed polylines where required. No gaps or overlaps between segment endpoints.</li>
+      <li>Remove duplicates. Deduplicate overlapping entities so each path is unique.</li>
+      <li>Resolve self-intersections. No crossing edges within a single contour.</li>
+      <li>Ensure correct winding. Interior contours should be defined as inner loops as expected by the CAM, or ensure the CAM detects islands reliably.</li>
+      <li>Normalize direction. Use consistent clockwise or counterclockwise direction per layer if your CAM uses path direction for compensation side.</li>
+      <li>Unify geometry scale. Confirm 1 to 1 scale. Avoid embedded scales or blocks with differing units.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Nesting and Part Organization</h2>
+    <p>
+      Nesting affects heat distribution, material yield, cycle time, and dimensional stability.
+    </p>
+    <ul>
+      <li>Maintain part spacing consistent with kerf and heat input. For thin sheet, small spacing can be acceptable; for thick plate, increase spacing to reduce heat accumulation and part tip-up risk.</li>
+      <li>Use common-line cutting only when straight segments align and quality impact is acceptable. Validate torch lag and edge quality on both parts.</li>
+      <li>Stagger small-hole-heavy parts to avoid localized overheating.</li>
+      <li>Sequence cuts to prioritize interior features before exterior profiles. This reduces part movement risk after the external contour is free.</li>
+      <li>Place micro-joints (tabs) on long edges or non-cosmetic faces. Keep tabs minimal but sufficient to hold parts until the last cuts.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Lead-ins, Lead-outs, and Entry Strategy</h2>
+    <p>
+      Lead geometry preserves part edges by moving the pierce point off the nominal profile. Selection depends on feature size and material.
+    </p>
+    <ul>
+      <li>For exterior contours, use short straight or arc lead-ins that direct the molten jet away from the finished edge. Position leads on non-critical faces.</li>
+      <li>For interior holes, use arc leads where possible. For very small holes near the minimum feasible size, some workflows pierce on the contour with reduced current and lower speed, or substitute a drill operation.</li>
+      <li>Set lead-in length proportional to thickness and kerf to allow stable motion before intersecting the profile. Lead-out can be shorter and should exit to a scrap area to prevent edge blowout.</li>
+      <li>Avoid placing leads near corners, tight radii, or intersections. Offset pierce points away from concentrated heat zones.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Kerf Compensation Approaches</h2>
+    <p>
+      Kerf is the material removed by the plasma jet. Compensation can be applied in CAD by offsetting geometry or in CAM by applying toolpath offsets. Each method has implications for revision control and downstream reuse.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Aspect</th>
+          <th>CAD pre-offset</th>
+          <th>CAM compensation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Change traceability</td>
+          <td>Geometry encodes offsets; risk of confusion between nominal and compensated versions</td>
+          <td>Nominal geometry preserved; compensation defined in CAM setup</td>
+        </tr>
+        <tr>
+          <td>Flexibility across machines</td>
+          <td>Rigid; offsets baked in and not portable to different kerf widths</td>
+          <td>Flexible; kerf width and side selectable per machine, consumable, and material</td>
+        </tr>
+        <tr>
+          <td>Risk of double compensation</td>
+          <td>Possible when CAM also offsets by default</td>
+          <td>Low if nominal geometry is used consistently</td>
+        </tr>
+        <tr>
+          <td>Revision workflow</td>
+          <td>Requires careful labeling and segregation of compensated drawings</td>
+          <td>Single source of truth in CAD; variations handled in CAM templates</td>
+        </tr>
+        <tr>
+          <td>Accuracy control</td>
+          <td>Fixed to the assumed kerf; mismatch if consumables change</td>
+          <td>Tunable per job; supports hole quality rules and feature-aware strategies</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      In general, maintain nominal CAD geometry and apply compensation in CAM. Use CAD pre-offset only in controlled contexts with strict labeling to prevent errors.
+    </p>
+  </section>
+  <section>
+    <h2>Text, Marking, and Etching</h2>
+    <ul>
+      <li>Prefer single-line (stick) fonts for marking passes if supported. For cut-through text, increase letter height and simplify shapes.</li>
+      <li>Ensure minimum web between characters and cutouts is above process minimums.</li>
+      <li>Separate marking and cutting on different layers. Confirm your machine supports reduced power marking or separate tool definitions.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Datum, Origin, and Sheet Coordinate System</h2>
+    <ul>
+      <li>Set the model origin at a sheet corner or a fixture datum that exists on the table.</li>
+      <li>Align the X and Y axes to the expected machine axes. Avoid rotated drawings unless the CAM performs auto-rotation.</li>
+      <li>Keep the top-left or bottom-left corner conventions consistent across projects.</li>
+      <li>Add a non-cut reference square or fiducial on a non-export layer if your shop uses on-table verification.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Export Workflow and Settings</h2>
+    <ul>
+      <li>Keep only cut and mark layers in the export. Purge text, dimensions, hatches, images, and construction geometry.</li>
+      <li>Use polylines with consistent vertex ordering. Retain true arcs to minimize point counts and maintain smooth motion.</li>
+      <li>Apply a chord tolerance that is finer than the kerf when converting splines to polylines or arcs. Maintain a single value across the file to avoid mixed fidelity.</li>
+      <li>Verify units embedded in the file match the intended units in CAM. Use explicit unit metadata when available.</li>
+    </ul>
+    <h3>Export settings checklist:</h3>
+    <ul>
+      <li>DXF R12 or R14 with polylines and arcs</li>
+      <li>Units set to millimeters or inches consistently</li>
+      <li>All contours closed; no duplicate or zero-length entities</li>
+      <li>Layers limited to cut and mark; correct layer naming</li>
+      <li>Scale 1 to 1; origin placed at a practical corner</li>
+      <li>Spline-to-arc/line conversion tolerance below kerf width</li>
+      <li>No hatches, images, or proxy objects</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Quality Control Before Cutting</h2>
+    <ul>
+      <li>Simulate toolpaths to verify cut order, lead-in placement, and collision with tabs.</li>
+      <li>Confirm interior features cut before exterior profiles.</li>
+      <li>Count pierces and evaluate pierce distribution to minimize consumable wear and heat concentration.</li>
+      <li>Review estimated cut time and total path length for scheduling and cost.</li>
+      <li>If available, enable small-hole routines or reduced-speed parameters for holes and fine features.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Common Pitfalls and Fixes</h2>
+    <ul>
+      <li>Tiny bridges and fillets burn away: increase radii and web dimensions beyond process minimums.</li>
+      <li>Distorted small holes: enlarge nominal size or plan secondary drilling; apply hole quality routines in CAM.</li>
+      <li>Excess dross and bevel: adjust cut speed, stand-off, and consumables; review kerf compensation side.</li>
+      <li>Warping in thin sheet: revise nesting to distribute heat, add tabs, or sequence cuts to reduce localized heating.</li>
+      <li>Mis-scaled parts: unify units and scale before export; verify in CAM with known dimension checks.</li>
+      <li>Unintended internal cuts: remove residual construction geometry and hatches; restrict export layers.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>FAQs</h2>
+    <h3>What file format works best for CNC plasma CAM?</h3>
+    <p>
+      DXF with polylines and true arcs is the most reliable for 2D plasma workflows. It preserves geometry fidelity while remaining lightweight. DWG is also acceptable if your CAM handles it consistently. Use a single unit system and maintain scale 1 to 1. Avoid embedded hatches, dimensions, or images in the exported file.
+    </p>
+    <h3>How small can I make holes and slots with plasma?</h3>
+    <p>
+      Minimum hole size depends on torch, consumables, and thickness. As a rule of practicality, design hole diameters larger than one and a half to two times the material thickness for thin sheet and larger multiples for thicker plate. For fit-critical or small holes, plan a secondary drilling step or enable small-hole routines in CAM that reduce speed and modify lead strategies.
+    </p>
+    <h3>Should I offset for kerf in CAD or let CAM handle it?</h3>
+    <p>
+      Keep CAD geometry nominal and apply kerf compensation in CAM. This preserves a single source of truth and allows quick adjustment for different machines, consumables, and materials. Pre-offset in CAD is prone to confusion and double compensation unless drawings are tightly controlled and labeled.
+    </p>
+    <h3>How do I prevent parts from tipping or shifting during cutting?</h3>
+    <p>
+      Use tabs sized to the material and part mass, place interior cuts before exterior profiles, and maintain adequate part spacing. Sequence cuts to avoid concentrating heat in one region. For small parts, consider skeleton retention strategies or temporary bridges that are removed after cutting.
+    </p>
+    <h3>Why does my CAM break curves into many short segments?</h3>
+    <p>
+      Spline or polyline curves with tight chord tolerances can export as dense segment sets. Convert splines to arcs where possible and set a chord error finer than the kerf but not excessively small. Excessive segmentation increases motion planner workload and can degrade edge quality due to frequent decelerations.
+    </p>
+  </section>
+  <section>
+    <h2>Conclusion</h2>
+    <p>
+      A precise plasma-ready CAD file is defined by clean topology, manufacturable feature sizes, explicit layer discipline, and consistent units. Design within process limits for the chosen material and thickness. Preserve nominal geometry and apply kerf compensation and lead strategies in CAM. Control exports to simple, closed polylines and arcs. Validate with simulation and a practical QC checklist before cutting. This disciplined workflow produces predictable dimensions, stable edge quality, and repeatable results across machines and jobs.
+    </p>
+  </section>
+</body>
+</html>
