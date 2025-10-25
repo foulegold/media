@@ -1,5 +1,7 @@
 ![cad3](https://github.com/user-attachments/assets/b15b08d9-26c7-4348-b95d-82761ceed797)
 ![cad4](https://github.com/user-attachments/assets/0a7c42ed-f77e-4cb9-a17b-7bf49e0ebd48)
+![cad1](https://github.com/user-attachments/assets/6f7d22ad-4451-485c-b09e-b090408d84b2)
+![cad2](https://github.com/user-attachments/assets/814391c8-e0d3-4380-94c3-cf4af70392dd)
 
 
 <img width="1536" height="1024" alt="ai2" src="https://github.com/user-attachments/assets/c17a3d59-c5ed-4955-abab-d0754f68dd01" />
