@@ -7,6 +7,7 @@
 ![milazzo8](https://github.com/user-attachments/assets/bbdc93e1-09c0-401e-a165-b3ea7434a774)
 
 
+![world-pianis-day](https://github.com/user-attachments/assets/16aaa224-6e9f-4b5f-a3fa-955a38f27d8d)
 
 
 ![orangesoft4](https://github.com/user-attachments/assets/7d2bfeab-7a27-4b73-a4bc-54af3d86a19d)
