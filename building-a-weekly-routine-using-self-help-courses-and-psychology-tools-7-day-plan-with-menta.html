@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Building a Weekly Routine Using Self-Help Courses and Psychology Tools (A 7-Day Plan with Menta)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Structured 7-day self-help routine using mental health courses and psychology tools to build consistent habits, reduce stress, improve sleep, and support emotional wellbeing with platforms like Menta. [web:1]">
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f172a, #1f2937);
+      --card-gradient: linear-gradient(135deg, #111827, #020617);
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.15);
+      --accent-strong: #0ea5e9;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border-subtle: rgba(148, 163, 184, 0.35);
+      --surface: rgba(15, 23, 42, 0.8);
+      --shadow-soft: 0 24px 60px rgba(15, 23, 42, 0.75);
+      --radius-xl: 24px;
+      --radius-full: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background-image: radial-gradient(circle at top left, #1e293b, transparent 55%), radial-gradient(circle at bottom right, #0f172a, transparent 55%), var(--bg-gradient);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 16px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 960px;
+      background: radial-gradient(circle at top left, rgba(148, 163, 184, 0.09), transparent 50%), radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.12), transparent 55%), var(--card-gradient);
+      border-radius: 32px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      box-shadow: var(--shadow-soft);
+      padding: 32px 20px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 60%),
+        radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.1), transparent 55%);
+      mix-blend-mode: screen;
+      opacity: 0.9;
+    }
+
+    .page-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 3vw, 2.6rem);
+      line-height: 1.15;
+      margin: 0 0 12px;
+      letter-spacing: 0.01em;
+      background: linear-gradient(120deg, #f9fafb, #bae6fd, #f9fafb);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 28px;
+      max-width: 560px;
+    }
+
+    .hero-band {
+      position: relative;
+      margin-bottom: 32px;
+      padding: 16px 18px;
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(120deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)),
+        radial-gradient(circle at left top, rgba(56, 189, 248, 0.24), transparent 60%);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+      gap: 18px;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-band::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 999px;
+      background: conic-gradient(from 210deg, rgba(56, 189, 248, 0.35), transparent 40%, rgba(129, 140, 248, 0.35), transparent 75%);
+      right: -130px;
+      top: -40px;
+      opacity: 0.55;
+      filter: blur(1px);
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-kicker {
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .hero-main {
+      font-size: 0.95rem;
+      color: #e5e7eb;
+    }
+
+    .hero-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .hero-chip {
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.26), transparent 55%);
+      color: #e5e7eb;
+      white-space: nowrap;
+    }
+
+    .hero-highlight {
+      position: relative;
+      z-index: 1;
+      padding: 12px 14px;
+      border-radius: 18px;
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.15), transparent 55%), radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.18), transparent 60%);
+      border: 1px solid rgba(148, 163, 184, 0.55);
+      backdrop-filter: blur(18px);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .hero-highlight-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #bfdbfe;
+    }
+
+    .hero-highlight-main {
+      font-size: 0.85rem;
+      color: #e5e7eb;
+    }
+
+    .hero-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .hero-pill {
+      font-size: 0.7rem;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: #e5e7eb;
+      white-space: nowrap;
+    }
+
+    section {
+      margin-bottom: 28px;
+      padding: 18px 18px 20px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.97), rgba(15, 23, 42, 0.92));
+      border: 1px solid var(--border-subtle);
+      position: relative;
+      overflow: hidden;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 60%),
+        radial-gradient(circle at bottom right, rgba(30, 64, 175, 0.2), transparent 60%);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    section:nth-of-type(2n)::before {
+      background:
+        radial-gradient(circle at top right, rgba(96, 165, 250, 0.16), transparent 60%),
+        radial-gradient(circle at bottom left, rgba(45, 212, 191, 0.16), transparent 60%);
+    }
+
+    .section-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin: 0 0 10px;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #e5e7eb;
+    }
+
+    .section-tag {
+      font-size: 0.7rem;
+      padding: 2px 10px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.22), transparent 55%);
+      color: #e5e7eb;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin: 18px 0 6px;
+      color: #e5e7eb;
+    }
+
+    p {
+      margin: 8px 0;
+      color: #d1d5db;
+      font-size: 0.95rem;
+    }
+
+    strong {
+      color: #f9fafb;
+      font-weight: 600;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    ul {
+      margin: 8px 0 4px 18px;
+      padding: 0;
+      color: #d1d5db;
+    }
+
+    li {
+      margin: 3px 0;
+      padding-left: 4px;
+    }
+
+    a {
+      color: var(--accent-strong);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(56, 189, 248, 0.5);
+      padding-bottom: 1px;
+      transition: color 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+    }
+
+    a:hover {
+      color: #f9fafb;
+      border-bottom-color: rgba(248, 250, 252, 0.7);
+      background: rgba(15, 23, 42, 0.6);
+    }
+
+    .faq-block {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 18px;
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 60%);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+    }
+
+    .faq-block p {
+      margin: 6px 0;
+    }
+
+    .quick-list {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 18px;
+      background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.09), transparent 60%);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+    }
+
+    .quick-list h3 {
+      margin-top: 4px;
+    }
+
+    .quick-list ul {
+      margin-left: 16px;
+    }
+
+    .footnote {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 10px;
+      }
+      .page {
+        padding: 22px 14px 26px;
+        border-radius: 24px;
+      }
+      .hero-band {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 14px 12px;
+      }
+      section {
+        padding: 16px 12px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header>
+        <h1>Building a Weekly Routine Using Self-Help Courses and Psychology Tools (A 7-Day Plan with Menta)</h1>
+        <p class="subtitle">A 7-day repeatable structure that connects self-help courses, micro-practices, and psychology tools into a sustainable routine you can maintain over time. [web:1]</p>
+
+        <div class="hero-band">
+          <div class="hero-text">
+            <div class="hero-kicker">Weekly self-help structure</div>
+            <p class="hero-main">
+              Combine short course modules, micro-practices, and reflection tools into a modest routine that actually fits into daily life instead of collapsing under pressure.
+            </p>
+            <div class="hero-chip-row">
+              <span class="hero-chip">7-day repeatable plan</span>
+              <span class="hero-chip">10–25 minutes a day</span>
+              <span class="hero-chip">Micro-skills &amp; review</span>
+            </div>
+          </div>
+          <div class="hero-highlight">
+            <div class="hero-highlight-label">Powered by practice</div>
+            <div class="hero-highlight-main">
+              Use free self-help courses and psychology tools to build skills for anxiety, stress, sleep, mood, and relationships in a structured, low-friction way. [web:1]
+            </div>
+            <div class="hero-pill-row">
+              <span class="hero-pill">Self-help courses</span>
+              <span class="hero-pill">Reflection tools</span>
+              <span class="hero-pill">Routines, not streaks</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            Introduction
+            <span class="section-tag">Context</span>
+          </h2>
+          <p>Many people start self-help with motivation but without a routine. They read a few articles, try several techniques, and then stop - not because they lack willpower, but because the plan is too vague or too demanding. A consistent routine is often the missing link between "good information" and meaningful change.</p>
+          <p>A mental health AI platform can reduce friction by providing a clear next step, organizing resources into structured self-help courses, and offering psychology tools that help you reflect on progress. Menta Platform (<a href="https://mentaplatform.com" target="_blank">https://mentaplatform.com</a>) describes a library of free courses and tools across themes such as anxiety, depression, stress, sleep, and relationships, which makes it a suitable example for planning a weekly skills routine. [web:1]</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            Why Routine Matters (and Why Many Plans Fail)
+            <span class="section-tag">Foundations</span>
+          </h2>
+          <p>Routines fail for predictable reasons. Some plans demand too much time. Others require too many decisions ("What should I do today?") and collapse when life becomes busy. Many people also try to change everything at once: sleep, diet, exercise, relationships, productivity. The result is overwhelm, followed by disengagement.</p>
+          <p>A sustainable routine is the opposite: it is modest, repeatable, and focused. The objective is not to do more. It is to do the same small set of actions consistently enough that they become easier.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            The 4 Building Blocks of a Weekly Self-Help Routine
+            <span class="section-tag">Structure</span>
+          </h2>
+          <p>A practical weekly plan uses four building blocks: a baseline check-in, a learning module, a micro-practice, and a review. Each block is small, but together they create a feedback loop.</p>
+          <p>Below is a 7-day structure you can repeat each week. It is designed to take 10-25 minutes per day (often less). You can adapt it to the platform you use, but the logic stays the same.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            A Simple Weekly Structure (Repeatable Every Week)
+            <span class="section-tag">7-day plan</span>
+          </h2>
+
+          <h3>Day 1: Baseline and Focus</h3>
+          <p>Start with a brief baseline check-in. The goal is not to judge yourself; it is to clarify what you want to practice this week. Choose one focus area. Examples: sleep routine, stress management, emotional regulation, or relationship communication.</p>
+          <p>Then select one structured self-help course module that matches your focus. For example, if stress is your focus, choose an introductory module that explains stress responses and one coping skill.</p>
+          <ul>
+            <li>Write a one-sentence goal: "This week I will practice one stress skill daily."</li>
+            <li>Choose a practice time that is realistic (e.g., after lunch or before bed).</li>
+            <li>Decide how you will track progress (weekly note, not constant monitoring).</li>
+          </ul>
+
+          <h3>Days 2-4: Learn and Practice (Small, Repeated Steps)</h3>
+          <p>On each of these days, complete one small portion of a course module (10 minutes or less) and immediately practice one micro-skill. Learning without practice rarely changes behavior. Practice without learning can feel random. Pairing them creates momentum.</p>
+          <p>If your platform offers psychology tools such as short reflection prompts or worksheets, use just one per day. The aim is repetition: the same skill, practiced in similar conditions, becomes easier to use.</p>
+          <ul>
+            <li>Read or watch one short lesson.</li>
+            <li>Practice one technique for 3-5 minutes (breathing, grounding, cognitive reframing, or a communication script).</li>
+            <li>Write one sentence: What did I notice?</li>
+          </ul>
+
+          <h3>Day 5: Apply One Skill in Real Life</h3>
+          <p>Day 5 is about transfer: using the skill outside the learning environment. Choose one real-life context where you can practice. Examples include a stressful email, a difficult conversation, or the evening wind-down before sleep.</p>
+          <p>Application matters because it tests the skill under realistic conditions. It also builds confidence: you are not only "studying" coping skills; you are using them.</p>
+          <ul>
+            <li>Pick one situation in advance (not the most difficult one).</li>
+            <li>Use the skill once, briefly.</li>
+            <li>Afterwards, reflect: What helped? What would I adjust next time?</li>
+          </ul>
+
+          <h3>Day 6: Review (Weekly Reflection, Not Daily Pressure)</h3>
+          <p>Review your week with a calm mindset. A review is not a performance evaluation; it is data collection. What patterns did you notice? Did the skill feel easier over time? Did you practice at the planned time?</p>
+          <p>If you used questionnaires or other psychology tools, interpret them as signals, not conclusions. A small shift may already be progress. If there is no shift, it is still useful information for adjusting your plan.</p>
+          <ul>
+            <li>Note one success (even small).</li>
+            <li>Note one barrier (time, motivation, unclear instructions).</li>
+            <li>Choose one adjustment for next week.</li>
+          </ul>
+
+          <h3>Day 7: Plan Next Week</h3>
+          <p>Planning is where routines become sustainable. Decide whether to keep the same focus for another week (often advisable) or to shift to a new theme. Many people benefit from staying with one theme for two to four weeks to build skill depth.</p>
+          <p>Choose next week's module and micro-skill in advance. This reduces decision fatigue and makes it easier to begin on Day 1.</p>
+          <ul>
+            <li>Keep the same focus if you are still learning the skill.</li>
+            <li>If changing focus, choose a related theme (e.g., stress management to sleep).</li>
+            <li>Schedule your practice time for the next week.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            How to Use Psychology Tools Without Overcomplicating Your Week
+            <span class="section-tag">Tools</span>
+          </h2>
+          <p>The purpose of <a href="https://mentaplatform.com/psychology-tools/en" target="_blank">[psychology tools]</a> is to support reflection and behavior change, not to label you. Use tools that translate into action. For example, a brief stress check-in is helpful if it leads you to use one coping strategy. A worksheet is useful if it helps you identify a pattern and practice an alternative response.</p>
+          <p>In practice, fewer tools used consistently beat many tools used occasionally. Select one or two tools that align with your weekly focus. Then use the same tools for two to four weeks before switching. [web:1]</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            How Menta Platform Fits This Model
+            <span class="section-tag">Platform</span>
+          </h2>
+          <p>Your routine should be supported by a platform that makes the next step obvious. <a href="https://mentaplatform.com/" target="_blank">[Menta Platform]</a> describes offerings that include free courses and tools across anxiety, depression, stress, sleep, and relationships. This breadth can be helpful for choosing a focus area, while the course format supports consistent progression rather than one-off tips. [web:1][web:8]</p>
+          <p>A practical approach is to start with one course theme and build a small toolkit around it. For example: a stress module plus one grounding exercise and one short reflection prompt. Keep the link between learning and practice explicit. [web:4]</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            A Brief Example Week (How It Looks in Real Life)
+            <span class="section-tag">Example</span>
+          </h2>
+          <p>Example: A week focused on sleep and stress. Suppose your primary issue is racing thoughts at night. On Day 1 you choose a sleep-related self-help course module and set a goal: "I will practice a 5-minute wind-down routine." On Days 2-4 you learn one concept (sleep pressure, circadian rhythm, or stimulus control) and practice one calming technique (breathing, grounding, or a brief journal prompt).</p>
+          <p>On Day 5 you apply the routine in a real situation: you turn off notifications 30 minutes before bed and practice the same technique at the same time. On Day 6 you review: Did sleep onset improve even slightly? Did the routine feel easier by repetition? On Day 7 you plan: keep the same routine for another week, and add one small environmental change (dim lights, consistent wake time).</p>
+          <p>This example is intentionally modest. Small, repeatable actions are more likely to improve sleep than a complex plan that is abandoned after two days.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            Safeguards That Keep the Routine Alive
+            <span class="section-tag">Habits</span>
+          </h2>
+          <p>If you want to increase the likelihood that your routine lasts, build in simple safeguards. Most drop-offs happen during busy weeks or after one missed day. Prepare for this in advance: decide what your "minimum" version of the routine looks like.</p>
+          <p>For example, on a hard day, your minimum might be: one minute of breathing and one sentence of reflection. Consistency at a lower intensity preserves the habit. You can increase intensity later.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            Safety and Boundaries
+            <span class="section-tag">Safety</span>
+          </h2>
+          <p>A short routine is not a substitute for professional mental health care. If your symptoms are severe, persistent, or worsening, or if you are experiencing safety concerns, seek qualified professional help. If you are in immediate danger, contact local emergency services or a crisis service in your region.</p>
+          <p>Self-help is most effective when it is used as a complement: it builds skills that support functioning and resilience, while professional care addresses complex or high-risk needs.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            Frequently Asked Questions (FAQ)
+            <span class="section-tag">FAQ</span>
+          </h2>
+          <div class="faq-block">
+            <p><strong>How long should a course module take each day?</strong></p>
+            <p>Start with 10-20 minutes and scale gradually. A routine that you can repeat is more valuable than a long session you do once.</p>
+
+            <p><strong>What if I miss a week?</strong></p>
+            <p>Restart with a smaller commitment. Return to your minimum routine first, then rebuild. Missing time is not failure; it is part of habit formation.</p>
+
+            <p><strong>Can tools help with motivation?</strong></p>
+            <p>Yes, especially when progress is visible and goals are small. Weekly review notes can be more motivating than daily scoring.</p>
+
+            <p><strong>Should I change my focus every week?</strong></p>
+            <p>Usually no. Staying with one theme for two to four weeks helps skills consolidate and makes progress easier to detect.</p>
+
+            <p><strong>How do I choose a focus area?</strong></p>
+            <p>Choose the area that most affects your daily functioning right now: sleep, stress, mood regulation, or communication. Avoid trying to optimize everything at once.</p>
+
+            <p><strong>How many psychology tools should I use?</strong></p>
+            <p>One or two, consistently. Too many tools creates decision fatigue and reduces repetition.</p>
+
+            <p><strong>Can I combine this with therapy?</strong></p>
+            <p>Yes. Many people use self-help courses and tools to reinforce therapy goals between sessions.</p>
+
+            <p><strong>Where can I explore Menta Platform?</strong></p>
+            <p>You can review available courses and tools at <a href="https://mentaplatform.com" target="_blank">https://mentaplatform.com</a> and select a theme that matches your current goal. [web:1]</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <h2>
+            Quick Do / Don't List
+            <span class="section-tag">Guidelines</span>
+          </h2>
+          <div class="quick-list">
+            <h3>Do:</h3>
+            <ul>
+              <li>Track patterns over weeks, not days.</li>
+              <li>Choose one skill to practice repeatedly until it feels familiar.</li>
+              <li>Keep daily sessions short and realistic.</li>
+              <li>Use weekly reviews to adjust your plan rather than abandoning it.</li>
+            </ul>
+
+            <h3>Don't:</h3>
+            <ul>
+              <li>Do not switch tools daily without reflection.</li>
+              <li>Do not interpret a single test score as a diagnosis.</li>
+              <li>Do not set goals that require perfection (aim for consistency, not intensity).</li>
+            </ul>
+
+            <p>Do not use tracking as reassurance-seeking when anxious</p>
+          </div>
+          <p class="footnote">Menta offers free self-help tools, courses, and trackers that can be integrated into weekly routines like this one. [web:1][web:6]</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
