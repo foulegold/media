@@ -1,6 +1,6 @@
 # How to Choose the Best Website Template for Your Startup
 
-Picking the proper website template is one of the key and critical early strategy decisions for a startup. Your website is usually the first touch-point potential clients have with your brand and first impressions count. Whether you’re checking out Framer templates on https://templifica.com/, WordPress themes, or custom-made designs, know how to pick the right website template for your startup so everything from your online presence is on brand can align with business.
+Picking the proper website template is one of the key and critical early strategy decisions for a startup. Your website is usually the first touch-point potential clients have with your brand and first impressions count. Whether you’re checking out Framer templates on [https://templifica.com/](https://templifica.com/), WordPress themes, or custom-made designs, know how to pick the right website template for your startup so everything from your online presence is on brand can align with business.
 
 A good template looks nice, but it’s not just about that. It makes your site more usable, adds credibility, helps marketing efforts and is an efficient way to grow your business. In this ultimate guide we are going to dive into the specific things you need to think about when choosing a website template that is right for your brand, audience and goals.
 
