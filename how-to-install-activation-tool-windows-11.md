@@ -1,6 +1,6 @@
 # How to Install the Activation Tool on Windows 11
 
-Windows 11 should be activated using legitimate methods provided by Microsoft; references to third‑party activators such as [kmspico](https://kmspico.app/) raise legal and security risks and are out of scope for compliant environments. This guide explains how to install and configure activation on Windows 11 correctly, including environment-specific caveats, security prompts, and troubleshooting paths appropriate for home and business systems.
+Windows 11 should be activated using legitimate methods provided by Microsoft; references to third‑party activators such as [kmspico](https://kmspico8.com/) raise legal and security risks and are out of scope for compliant environments. This guide explains how to install and configure activation on Windows 11 correctly, including environment-specific caveats, security prompts, and troubleshooting paths appropriate for home and business systems.
 
 ## Scope and prerequisites
 
