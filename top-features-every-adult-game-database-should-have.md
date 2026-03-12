@@ -205,3 +205,12 @@ A well-organized game database does much more than just list titles. This leads 
 With an ever-increasing number of indie games being released, such databases will become vital to retaining information and leading users towards quality material. If the platforms tend to disseminate accurate information, encourage community engagement with everyday usability practices and standards—well, in that case we’ll be using those resource for many years.
 
 Following the features covered in this article will allow database platform developers to provide a robust discovery tool for both gaming and other digital entertainment.
+
+## More articles
+- https://api.prx.org/series/60837-top-features-every-adult-game-database-should-have
+- https://www.gamerlaunch.com/community/users/blog/6534800/2502645/top-features-every-adult-game-database-should-have/?gid=535
+- https://jobhop.co.uk/blog/fgmedia/top-features-every-adult-game-database-should-have
+- https://foulegold.github.io/media/top-features-every-adult-game-database-should-have.html
+- https://codepen.io/fgmedia/full/ZYpLOrV
+- https://cdpn.io/fgmedia/fullpage/ZYpLOrV
+- https://hackmd.io/@gogeticon/SJhHc8xqWg
