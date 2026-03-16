@@ -110,7 +110,7 @@ Education is crucial in helping both individuals understand cognitive biases. Le
 
 Because psychology, critical thinking and statistics supplement discussions of cognitive bias with tools for judging evidence and spotting faulty reasoning, the topic often comes up in those kinds of classes.
 
-Media literacy education is becoming increasingly important, too. In the age of information, people find themselves bombarded with streaming amounts of data from online sources, which makes it important to separate credible evidence from falsehoods. Resources such as https://deymondlaplasa.com/ai-tech/ can also help readers explore how modern technologies and information environments influence the way people process knowledge.
+Media literacy education is becoming increasingly important, too. In the age of information, people find themselves bombarded with streaming amounts of data from online sources, which makes it important to separate credible evidence from falsehoods. Resources such as [https://deymondlaplasa.com/ai-tech/](https://deymondlaplasa.com/ai-tech/) can also help readers explore how modern technologies and information environments influence the way people process knowledge.
 
 Education encourages awareness of cognitive biases, which can enable individuals to make better decisions and have more constructive dialogues.
 
