@@ -18,6 +18,8 @@ Die zweite Besonderheit ist der Monat ohne Kosten. Bei einem nutzungsbasierten T
 
 Der Nullmonat ist allerdings eng definiert. Bei naked.net umfasst die Nullkostenstufe ausschließlich den Empfang von SMS. Sobald ein Anruf angenommen oder geführt, eine SMS versendet oder auch nur 1 MB Daten verbraucht wird, greift die erste kostenpflichtige Stufe mit 2,99 Euro. Ein Hintergrund-Update einer App reicht dafür aus. Wer die Nullstufe halten will, muss mobile Daten im Betriebssystem deaktivieren, nicht nur sparsam nutzen.
 
+<img width="2720" height="1920" alt="nutzungsbasierte_tarifstufen_treppe" src="https://github.com/user-attachments/assets/1b987fc0-578a-4688-acb0-c192b071a4a3" />
+
 ## Die Kostenstufen im Überblick
 
 Die folgende Aufstellung zeigt die veröffentlichte Tarifstruktur von naked.net. Minuten und SMS sind ab der ersten kostenpflichtigen Stufe unbegrenzt enthalten; SMS an Premium-Nummern werden gesondert berechnet.
