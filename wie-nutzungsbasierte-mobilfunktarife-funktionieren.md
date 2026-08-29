@@ -1,6 +1,6 @@
 # Wie nutzungsbasierte Mobilfunktarife funktionieren und wer damit spart
 
-Ein klassischer Handyvertrag stellt eine einzige Frage vorab: Wie viel Datenvolumen brauchen Sie im Durchschnitt? Wer sich verschätzt, zahlt entweder für ungenutztes Volumen oder landet in der Drosselung. Nutzungsbasierte Tarife drehen die Reihenfolge um. Anbieter wie [https://naked.net/](https://naked.net/) ermitteln erst am Monatsende, wie viel tatsächlich verbraucht wurde, und leiten daraus den Preis ab. Die Grundgebühr entfällt, der Monat beginnt bei null Euro. Das klingt simpel, hat aber Konsequenzen für die Abrechnung, für die Kostenkontrolle und für die Frage, welcher Nutzertyp damit wirklich günstiger fährt.
+Ein klassischer Handyvertrag stellt eine einzige Frage vorab: Wie viel Datenvolumen brauchen Sie im Durchschnitt? Wer sich verschätzt, zahlt entweder für ungenutztes Volumen oder landet in der Drosselung. Nutzungsbasierte Tarife drehen die Reihenfolge um. Anbieter wie [https://naked.net/](https://naked.net) ermitteln erst am Monatsende, wie viel tatsächlich verbraucht wurde, und leiten daraus den Preis ab. Die Grundgebühr entfällt, der Monat beginnt bei null Euro. Das klingt simpel, hat aber Konsequenzen für die Abrechnung, für die Kostenkontrolle und für die Frage, welcher Nutzertyp damit wirklich günstiger fährt.
 
 ## Was nutzungsbasiert konkret bedeutet
 
