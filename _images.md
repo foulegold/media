@@ -1,3 +1,7 @@
+<img width="2720" height="1460" alt="rufnummernmitnahme_portierung_ablauf" src="https://github.com/user-attachments/assets/dec4b5c1-5abf-47d8-a29e-f3e02ab2e500" />
+
+
+
 
 ![moscow-international-business-center-skyline-__55323](https://github.com/user-attachments/assets/c146559d-e5db-4e9e-a480-086fb2b519d6)
 ![Moscow_city_img1-moscow-international-business-center-skyline-__55324](https://github.com/user-attachments/assets/4454cae5-9098-4948-9b8b-9d4b01b018d3)
