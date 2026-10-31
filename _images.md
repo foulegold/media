@@ -1,5 +1,6 @@
 <img width="2720" height="1460" alt="rufnummernmitnahme_portierung_ablauf" src="https://github.com/user-attachments/assets/dec4b5c1-5abf-47d8-a29e-f3e02ab2e500" />
 
+<img width="1200" height="630" alt="avtomatizatsiya-komandirovok-polnyj-tsikl-ot-zayavki-do-otcheta" src="https://github.com/user-attachments/assets/1e2e9f5c-d937-44b2-adb2-fad0f714f528" />
 
 
 
